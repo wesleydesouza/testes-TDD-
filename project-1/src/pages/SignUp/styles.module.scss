@@ -11,8 +11,13 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
-    width: 100%;
-    height: 300px;
+    width: 500px;
+
+    padding: 32px;
+
+    text-align: center;
+
+    border: 1px solid lightgray;
 
     button {
       margin-top: 10px;

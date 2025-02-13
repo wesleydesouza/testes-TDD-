@@ -3,6 +3,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import { configDefaults } from "vitest/config";
 
 export default defineConfig({
   plugins: [react()],
@@ -12,8 +13,12 @@ export default defineConfig({
     setupFiles: ["./src/setupTests.ts"],
     include: ["src/**/*.{test,spec}.tsx"],
     coverage: {
-      reporter: ["text", "json", "html"],
-      exclude: ["src/setupTests.ts", "src/index.tsx"],
+      exclude: [
+        // @ts-expect-error tenho certeza que nao virá undefined
+        ...configDefaults.coverage.exclude,
+        "*/types/*",
+        "src/main.tsx",
+      ],
     },
   },
   resolve: {
