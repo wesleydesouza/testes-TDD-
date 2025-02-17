@@ -11,7 +11,11 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: ["./src/setupTests.ts"],
-    include: ["src/**/*.{test,spec}.tsx"],
+    include: [
+      "src/**/*.{test,spec}.tsx",
+      "src/**/*.test.ts",
+      "src/**/*.spec.ts",
+    ],
     coverage: {
       exclude: [
         // @ts-expect-error tenho certeza que nao virá undefined

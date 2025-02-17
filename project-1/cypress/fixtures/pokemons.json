@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Bulbassauro",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "type": "Grass"
+  
+},
+{
+    "id": 2,
+    "name": "Charmander",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "type": "Fire"
+  
+},
+{
+    "id": 3,
+    "name": "Squirtle",
+    "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "type": "Water"
+  
+}
+
+]
